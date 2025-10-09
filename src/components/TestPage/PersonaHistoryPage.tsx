@@ -1,10 +1,7 @@
-import { useState } from "react"
-import { Input } from "../ui/input"
-import { Label } from "@/components/ui/label"
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
-import { useForm } from "react-hook-form"
-import { yupResolver } from "@hookform/resolvers/yup"
 import { personalHistorySchema } from "@/app/schema/personalHistorySchema"
+import { yupResolver } from "@hookform/resolvers/yup"
+import { useState } from "react"
+import { useForm } from "react-hook-form"
 
 export const PersonalHistory = ({ handleNext, handlePrev,setPersonalData }: {
    handleNext:()=>void;
@@ -65,7 +62,7 @@ export const PersonalHistory = ({ handleNext, handlePrev,setPersonalData }: {
       label: "What is your Age?",
       input: (
         <>
-          <input {...register("age")} className="w-2/3 mx-auto mt-2 ring-1 p-2 ring-black focus:ring-project-green focus:ring-2 outline-none" placeholder="Type here" />
+          <input {...register("age")} className="w-2/3 mx-auto mt-2 ring-2 p-2 ring-black focus:ring-project-green focus:ring-2 outline-none" placeholder="Type here" />
           <p className="text-red-500 text-sm text-center">{String(errors.age?.message || "")}</p>
         </>
       ),
@@ -74,7 +71,7 @@ export const PersonalHistory = ({ handleNext, handlePrev,setPersonalData }: {
       label: "What is your Height?",
       input: (
         <>
-          <input {...register("height")} className="w-2/3 mx-auto mt-2 ring-1 p-2 ring-black  focus:ring-project-green focus:ring-2 outline-none" placeholder=" in this format : 5ft 6in" />
+          <input {...register("height")} className="w-2/3 mx-auto mt-2 border-2 p-2 ring-black  focus:ring-project-green focus:ring-2 outline-none" placeholder=" in this format : 5ft 6in" />
           <p className="text-red-500 text-sm text-center">{String(errors.height?.message || "")}</p>
         </>
       ),
@@ -83,7 +80,7 @@ export const PersonalHistory = ({ handleNext, handlePrev,setPersonalData }: {
       label: "What is your Weight?",
       input: (
         <>
-          <input {...register("weight")} className="w-2/3 mx-auto mt-2 ring-1 p-2 ring-black  focus:ring-project-green focus:ring-2 outline-none" placeholder="in kg e.g 60kg" />
+          <input {...register("weight")} className="w-2/3 mx-auto mt-2 border-2 border-grey p-2 ring-black  focus:ring-project-green focus:ring-2 outline-none" placeholder="in kg e.g 60kg" />
           <p className="text-red-500 text-sm text-center">{String(errors.weight?.message || "")}</p>
         </>
       ),
