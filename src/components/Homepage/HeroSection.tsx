@@ -22,13 +22,13 @@ export const HeroSection = () => {
                             <div className="absolute w-[200px]  top-20 md:top-1/2 scale-50 md:scale-100 -left-20 md:-left-25 bg-project-pink rounded-lg p-2 ">
                                     <div className="flex items-center">
                                         <h1 className="text-3xl font-semibold">70%</h1>
-                                        <p className="text-[10px]">Of women in African countries are diagnosed at a late stage.</p>
+                                        <p className="text-sm">Of women in African countries are diagnosed at a late stage.</p>
                                     </div>
                             </div>
-                            <div className="absolute w-[200px]  bottom-30 md:bottom-15 scale-50 md:scale-100 -right-20 md:-right-25 bg-project-green rounded-lg p-2  max-w-sm md:max-w-md lg:max-w-lg mx-auto p-4 md:p-6 ">
+                            <div className="absolute w-[200px]  bottom-30 md:bottom-15 scale-50 md:scale-100 -right-20 md:-right-25 bg-project-green rounded-lg p-2 ">
                                     <div className="flex items-center">
                                         
-                                        <p className="text-[10px]">Spit dey show wetin body dey hide</p>
+                                        <p className="text-base">Spit dey show wetin body dey hide</p>
                                     </div>
                             </div>
                         </div>
