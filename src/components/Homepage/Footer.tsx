@@ -21,7 +21,7 @@ export default function Footer() {
            Quick Links
           </h4>
 
-          <div className="space-y-3 text-gray-400">
+          <div className="space-y-3 text-gray-500">
             <Link href="#">X(Twitter)</Link>
             <br />
             <Link href="#">Facebook</Link>
